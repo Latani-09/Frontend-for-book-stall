@@ -1,0 +1,64 @@
+<!-- Add a wrapper to center the content -->
+
+<div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6">
+  
+        <!-- Your login container -->
+        <div class="login-container">
+          <div class="login-header">
+            <h2>Add Book</h2>
+          </div>
+          <form class="login-form" #loginForm="ngForm" (ngSubmit)="onSubmit()" autocomplete="off">
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input
+                name="title"
+                [(ngModel)]="form.title"
+                class="form-control"
+                type="text"
+                id="title"
+                placeholder="Enter your Title"
+              >
+            </div>
+            <div class="form-group">
+              <label for="author">Author</label>
+              <input
+                name="author"
+                [(ngModel)]="form.author"
+                class="form-control"
+                type="text"
+                id="author"
+                placeholder="Enter your Author"
+              >
+            </div>
+            <div class="form-group">
+              <label for="price">Price</label>
+              <input
+                name="price"
+                [(ngModel)]="form.price"
+                class="form-control"
+                type="number"
+                id="price"
+                placeholder="Enter the Price"
+              >
+            </div>
+            <div class="form-group">
+              <label for="year">Year</label>
+              <input
+                name="year"
+                [(ngModel)]="form.year"
+                class="form-control"
+                type="number"
+                id="year"
+                placeholder="Enter the Year"
+              >
+            </div>
+            <button class="btn btn-primary btn-block" type="submit">Create</button>
+          </form>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  

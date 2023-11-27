@@ -1,0 +1,42 @@
+
+<h1>Welcome home</h1>
+<div class="page-padding">
+    <div class="page-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" *ngFor="let book of books">
+            <div class="product-layout product-grid">
+              <div class="product-thumb">
+                <div id="product5795" class="carousel slide" data-ride="carousel" data-interval="false">
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <figure class="figure">
+                        <img
+                          src="https://th.bing.com/th/id/OIP._zXfuEA95QhKw8_3pk3INgHaFG?pid=ImgDet&rs=1"
+                          class="figure-img img-fluid rounded"
+                          alt="A generic square placeholder image with rounded corners in a figure."
+                        />
+                      </figure>
+                    </div>
+                    <div class="button-group">
+                        <button (click)="addToCart(book.id)" class="btn btn-primary">addToCart</button>
+                    </div>
+                  </div>
+                  <div class="caption">
+                    <h5 id="product-caption">
+                      <a [href]="'/product-details/' + book.Id">{{ book.title }}</a>
+                    </h5>
+                    <p class="price" style="margin-bottom: 0">Rs {{ book.price }}</p>
+                    <p class="author">Author: {{ book.author }}</p>
+                    <p class="year">Year: {{ book.year }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+

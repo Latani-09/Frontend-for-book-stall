@@ -1,0 +1,20 @@
+<form class="d-flex"  >
+
+  <input name="Name"
+         [(ngModel)]="book.Name"
+         class="form-control me2"
+         type="text"
+         placeholder="Movie Name" aria-label="movie name">
+  <input name="Price"
+         [(ngModel)]="book.Price"
+         class="form-control me2" type="number" placeholder=" Price" aria-label="price">
+         <input type="file" class="file-input"
+         (change)="onFileSelected($event)" #fileUpload>
+  <div class="file-upload">
+    {{fileUpload || "No file uploaded yet."}}
+    <button mat-mini-fab color="primary" class="upload-btn"
+            (click)="fileUpload.click()"> 
+    </button>
+  </div>
+  <button class="btn btn-outline-success" type="submit">create movie</button>
+</form>

@@ -1,0 +1,26 @@
+.user-table {
+    font-family: Arial, sans-serif;
+    margin: 20px auto; /* Center the table and provide some margin */
+    width: 80%; /* Adjust the width as needed */
+  }
+  
+  .user-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .user-table th, .user-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .user-table th {
+    margin-top: 20%;
+    background-color: #f9f9f9;
+  }
+  
+  .user-table tr:hover {
+    background-color: #e0e0e0;
+  }
+  

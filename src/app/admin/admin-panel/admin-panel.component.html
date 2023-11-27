@@ -1,0 +1,35 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <div class="user-table">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Actions</th> <!-- Added for edit and delete buttons -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let user of users">
+                <td>{{ user.id }}</td>
+                <td>{{ user.userName }}</td>
+                <td>
+                  <!-- Update the Edit button to use Angular router -->
+                  <button class="btn btn-primary" (click)="editUser(user.userName)">Edit</button>
+                  <button class="btn btn-primary" (click)=deleteUser(user); type="btton">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-10 text-center">
+        <button >
+          <a href="/register" class="nav-link" >Add User</a></button>
+      </div>
+    </div>
+  </div>
+  

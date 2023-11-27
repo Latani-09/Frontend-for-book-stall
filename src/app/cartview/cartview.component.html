@@ -1,0 +1,38 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <div class="user-table">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Quatity</th>
+                <th>price</th> <!-- Added for edit and delete buttons -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of cartItems">
+                <td>{{ item.bookId }}</td>
+                <td>{{item.title}}</td>
+                
+                <td>{{item.price}}</td>
+                <td>{{ item.quantity }}</td>
+
+                <button class="btn btn-primary" (click)=delete(item.bookId); type="btton">Remove</button>
+                  <!-- Update the Edit button to use Angular router -->
+              </tr>
+
+            </tbody>
+          </table>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-10 text-center">
+        <button >
+          <a href="/home" class="nav-link" >clear cart</a></button>
+      </div>
+    </div>
+  </div>
+  

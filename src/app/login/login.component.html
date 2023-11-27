@@ -1,0 +1,33 @@
+
+
+<div class="login-container">
+    <div class="login-header">
+      <h2>Login</h2>
+    </div>
+    <form class="login-form" #loginForm="ngForm" (ngSubmit)="Login()" autocomplete="off">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input
+          name="UserName"
+          [(ngModel)]="form.username"
+          class="form-control"
+          type="text"
+          id="username"
+          placeholder="Enter your username"
+        >
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          name="Password"
+          [(ngModel)]="form.password"
+          class="form-control"
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+        >
+      </div>
+      <button class="btn btn-primary btn-block"   (click)="Login()" type="submit">Login</button>
+    </form>
+  </div>
+  

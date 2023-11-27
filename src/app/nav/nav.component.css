@@ -1,0 +1,25 @@
+.page-padding {
+  margin-top: 20px; /* Adjust the top margin as needed */
+  margin-bottom: 20px; /* Adjust the bottom margin as needed */
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-brand {
+  margin-right: auto;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
